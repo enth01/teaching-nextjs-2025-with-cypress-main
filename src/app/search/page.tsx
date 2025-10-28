@@ -54,7 +54,7 @@ export default async function Home({
           <p>Songs</p>
           <ul>
             {songs.map((song) => (
-              <li key={song.id}>
+              <li data-cy="song-result" key={song.id}>
                 {song.name} - {song.album_name} - {song.author_name}
               </li>
             ))}

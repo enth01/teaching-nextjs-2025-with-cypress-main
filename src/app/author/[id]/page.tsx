@@ -45,7 +45,7 @@ export default async function AuthorDetailPage({
           <ul>
             {albums.map((album) => (
               <li key={album.id}>
-                <Link href={`/album/${album.id}`}>{album.name}</Link>
+                <Link data-cy="album" href={`/album/${album.id}`}>{album.name}</Link>
               </li>
             ))}
           </ul>
